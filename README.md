@@ -40,3 +40,17 @@
 > <img src="http://nvie.com/img/merge-without-ff@2x.png" width="400" height="400">   
 > merge시 사용되는 --no-ff 명령어는 따로 존재했던 커밋이력을 하나로 통합하는 명령어이다.   
 > 자세한 내용은 추후 다시 알아보자.   
+   
+- <strong>Release</strong>
+> 'develop'에서 분기되며 'develop' 과 'master'로 merge된다.   
+> 'release'의 이름은 관례적으로 'RB_'의 접두어를 붙인다.   
+> Release를 위한 최종 버그 수정등의 작업을 관리하며 작업이 종료되면 'master'로 병합한다.   
+   
+- <strong>Hotfix branch</strong>
+> 'master'에서 분기되며 'develop' 과 'master'로 merge된다.   
+> 배포한 버전에 긴급하게 수정이 필요할때 'master'에서 분기한다.   
+> 예시 상황으로 'develop'에서 개발 진행중 배포한 소스코드에서 큰 버그가 발견될 경우 빠르게   
+> 수정후 재배포를 해야하는데 'develop'에서 문제부분을 수정하여 배포가능 버전을 만들기에는   
+> 시간이 많이 소요되고 안정성 보장도 어려우므로 바로 배포 가능한 'master'에서 직접 분기하여   
+> 필요부분만 수정후 merge를 한다.   
+> <img src="http://nvie.com/img/hotfix-branches@2x.png" width="400" hegiht="450">
