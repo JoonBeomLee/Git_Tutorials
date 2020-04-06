@@ -22,6 +22,7 @@
 > 통합 관리를 할 수도 있다. 그렇다면 통상적으로 Branch를 어떻게 구성하는지 알아보자.   
 
 ## Branch 종류
+> [참조](http://nvie.com/posts/a-successful-git-branching-model/)
 - <strong>master</strong> 
 > 'master' 기본적으로 생성되는 브랜치로 배포 가능한 상태만을 관리한다.  
    
@@ -54,3 +55,36 @@
 > 시간이 많이 소요되고 안정성 보장도 어려우므로 바로 배포 가능한 'master'에서 직접 분기하여   
 > 필요부분만 수정후 merge를 한다.   
 > <img src="http://nvie.com/img/hotfix-branches@2x.png" width="400" hegiht="450">
+
+- <strong>전체 branch</strong>
+> <img src="http://nvie.com/img/git-model@2x.png" width="550" height="600">
+   
+## branch 생성, 삭제, 확인
+> ```
+> git branch new_branch orig_branch         # git branch로 생성 
+> # new_branch에는 생성할 branch명
+> # orig_branch에는 분기할 branch명
+>   
+> git branch -D del_branch                  # git branch에서 '-D' 옵션 추가
+> # del_branch에는 삭제할 branch명
+>    
+> git branch -m oriName_branch chnName_branch   # git branch에서 '-m' 옵션 추가
+> # oriName_branch -> chnName_branch로 이름 변경 
+>   
+> git checkout target_branch                # checkout 명령어 사용
+> # 현재 branch에서 target_branch로 이동
+>   
+> git checkout -b new_branch                # checkout명령어에서 '-b' 옵션 추가
+> # new_branch의 생성과 이동을 한번에
+>   
+> git branch                                # 현재 등록된 브랜치 확인
+> git branch -v                             # 자세한 정보 확인
+>   
+> git branch --merged | --no-merged         # '--merged' | '--no-merged' 옵션 사용
+> # 현재 checkout한 브랜치를 기준으로 merge된 브랜치인지 확인       (안된 브랜치 *로 표시)
+> # 현재 checkout한 브랜치를 기준으로 no-merge된 브랜치인지 확인
+>   
+> # Merge하지 않은 커밋을 담고있는 브랜치는 git branch -d 명령어로 삭제되지 않는다.
+> # 강제로 삭제하려면
+> git branch -D 옵션을 사용
+> ```
