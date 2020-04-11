@@ -143,7 +143,7 @@
 > 원하는 부분을 강조하고 싶을때 사용.   
 > <태그>대상<태그>형식으로 사용된다.   
 >   
-> *이텔릭체* : ```*별표 한개(asterisks)* 또는 _언더바(underscore)```_   
+> *이텔릭체* : ```*별표 한개(asterisks)* 또는 _언더바(underscore)_```   
 > **두껍게** : ```**별표 두개(asterisks)** 혹은 __언더바(underscore)__```   
 > ~~취소선~~ : ```~~물결표시(tilde)~~```   
 > <u>밑줄</u> : ```<u>밑줄</u>```   
@@ -177,3 +177,16 @@
 >   * 별표(asterisks)  
 >   + 더하기(plus sign)   
 > ```
+   
+## 링크 (Links)
+> 작성한 페이지로 이동할 수 있는 링크를 제공 HTML의 a태그와 같은 역할을 한다.   
+> [Google](https://google.com)   
+> [Google2](https://google.com "마우스 hover시 띄울 내용을 작성할 수 있다.")   
+> [상대적 참조](./src) 현재 페이지 기준으로 경로를 지정 이동할 수 있다.   
+>   
+> [Target URL][Target URL Link] 다른곳에서 정의한 링크를 가져와 사용할 수 있다.   
+> [Target URL Link]: (https://google.com) 링크 정의   
+>   
+> 이러한 표현 없이 링크 그대로 사용할 수도 있다.   
+> 구글 : https://google.com
+> 네이버 : <https://naver.com>  꺽쇠로 구분하여 가독성을 높일수 있다.  
