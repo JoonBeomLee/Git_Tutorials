@@ -187,6 +187,40 @@
 > [Target URL][Target URL Link] 다른곳에서 정의한 링크를 가져와 사용할 수 있다.   
 > [Target URL Link]: (https://google.com) 링크 정의   
 >   
-> 이러한 표현 없이 링크 그대로 사용할 수도 있다.   
-> 구글 : https://google.com
-> 네이버 : <https://naver.com>  꺽쇠로 구분하여 가독성을 높일수 있다.  
+> 문서내에서 위와 같은 문법없이 링크 그대로 사용할 수도 있다.   
+> 구글 : https://google.com   
+> 네이버 : <https://naver.com>  꺽쇠로 구분하여 가독성을 높일수 있다.   
+>   
+> ```
+> 작성한 페이지로 이동할 수 있는 링크를 제공 HTML의 a태그와 같은 역할을 한다.   
+> [Google](https://google.com)   
+> [Google2](https://google.com "마우스 hover시 띄울 내용을 작성할 수 있다.")   
+> [상대적 참조](./src) 현재 페이지 기준으로 경로를 지정 이동할 수 있다.   
+>   
+> [Target URL][Target URL Link] 다른곳에서 정의한 링크를 가져와 사용할 수 있다.   
+> [Target URL Link]: (https://google.com) 링크 정의   
+>   
+> 문서내에서 위와 같은 문법없이 링크 그대로 사용할 수도 있다.   
+> 구글 : https://google.com   
+> 네이버 : <https://naver.com>  꺽쇠로 구분하여 가독성을 높일수 있다.   
+> ```
+   
+## 이미지 (Images) 
+> 이미지 주소를 통한 출력할 수 있다.   
+> 주소를 사용하기 때문에 링크 (Links)의 표현과 비슷하다.   
+> 차이점을 두기 위해 이미지 (Images) 앞에는 !를 붙인다.   
+> 
+> ![링크에 문제시 띄울 alt 문구 입력 가능](https://cdn.pixabay.com/photo/2015/03/12/04/43/landscape-669619_960_720.jpg "링크와 같이 마우스 hover시 띄울 내용 작성가능")
+> Link때와 같이 다른곳에서 정의한 이미지 링크를 사용할 수 있다.   
+> ![Target Imge][Target Image Link]   
+> [Target Imge Link]:(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH4ubU-b0mUiZVVnl4lrN2YsNukV8hfIFUng&usqp=CAU) 이미지 링크 정의   
+>   
+> ```
+> 이미지 주소를 통한 출력할 수 있다.   
+> 주소를 사용하기 때문에 링크 (Links)의 표현과 비슷하다.   
+> 차이점을 두기 위해 이미지 (Images) 앞에는 !를 붙인다.   
+> 
+> ![링크에 문제시 띄울 alt 문구 입력 가능](https://cdn.pixabay.com/photo/2015/03/12/04/43/landscape-669619_960_720.jpg "링크와 같이 마우스 hover시 띄울 내용 작성가능")
+> ![Target Imge][Target Image Link] Link때와 같이 다른곳에서 정의한 이미지 링크를 사용할 수 있다.   
+> [Target Imge Link]:(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH4ubU-b0mUiZVVnl4lrN2YsNukV8hfIFUng&usqp=CAU) 이미지 링크 정의   
+> ```
