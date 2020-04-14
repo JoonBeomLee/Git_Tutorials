@@ -221,8 +221,8 @@
 > ```
 
 ## 코드 (Code)
-> `\``기호 3번입력하여 원하는 부분을 감싸면 코드출력 형식으로 전환된다.   
-> `\``기호 3번입력이후 코드의 종류작성시 문법에 맞게 가시성을 높여준다.   
+> `기호 3번입력하여 원하는 부분을 감싸면 코드출력 형식으로 전환된다.   
+> `기호 3번입력이후 코드의 종류작성시 문법에 맞게 가시성을 높여준다.   
 >   
 > ```html
 > <button onclick="location.href='POP UP'">Click</button>
@@ -252,4 +252,35 @@
 > ```
 > code language종류 작성없이 사용가능.   
 > 그러나 문법에 맞는 표시 또한 없다.   
+> ```
+> ```
+> ```html
+> <button onclick="location.href='POP UP'">Click</button>
+> ```
+>   
+> ```css
+> h1 {
+>   color: red;
+> }
+> ```
+>   
+> ```javascript
+> function gitHub(){
+>   console.log("This page Git Tutorial");
+> }
+> ```
+>   
+> ```bash
+> cd ./
+> ```
+>   
+> ```python
+> for i in 5:
+>   print(i)
+> ```
+>   
+> ```
+> code language종류 작성없이 사용가능.   
+> 그러나 문법에 맞는 표시 또한 없다.   
+> ```
 > ```
