@@ -301,3 +301,25 @@
 > >>> 내용 1
 > >>>> 내용 1-1
 > ```
+   
+## 수평선 (Horizontal Rule)
+> 각 기호를 3번 이상 입력하여 사용.   
+> ---
+> (Hyphens)
+> 
+> ***
+> (Asterisks)
+> 
+> ___
+> (Underscores)
+>   
+> ```
+> ---
+> (Hyphens)
+> 
+> ***
+> (Asterisks)
+> 
+> ___
+> (Underscores)
+> ```
